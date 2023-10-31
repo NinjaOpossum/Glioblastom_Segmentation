@@ -1,0 +1,4 @@
+Class Background has 6256526161.0 pixels and %24.39 of the dataset
+Class Tumor has 12241840122.0 pixels and %47.73 of the dataset
+Class Nekrosen has 2600754332.0 pixels and %10.14 of the dataset
+Class artifiziell verändertes Gewebe has 4551014425.0 pixels and %17.74 of the dataset

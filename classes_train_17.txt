@@ -1,0 +1,17 @@
+Class Background has 2481514833.0 pixels and %9.67 of the dataset
+Class Tumor has 12239311740.0 pixels and %47.72 of the dataset
+Class Hirnparenchym has 0.0 pixels and %0.00 of the dataset
+Class Infiltrationszone has 1808058498.0 pixels and %7.05 of the dataset
+Class Blutung has 311561271.0 pixels and %1.21 of the dataset
+Class Luftblasen has 553261.0 pixels and %0.00 of the dataset
+Class Haare has 573214.0 pixels and %0.00 of the dataset
+Class Falten has 56007464.0 pixels and %0.22 of the dataset
+Class Risse has 7063.0 pixels and %0.00 of the dataset
+Class Nekrosen has 2600473244.0 pixels and %10.14 of the dataset
+Class Pseudopalisaden has 65675979.0 pixels and %0.26 of the dataset
+Class Artefakt has 89127071.0 pixels and %0.35 of the dataset
+Class artifiziell verändertes Gewebe has 4550197599.0 pixels and %17.74 of the dataset
+Class Nekrose und Blutung has 829168562.0 pixels and %3.23 of the dataset
+Class Pränekrose has 505751404.0 pixels and %1.97 of the dataset
+Class out of focus has 111488475.0 pixels and %0.43 of the dataset
+Class Filzstift has 665362.0 pixels and %0.00 of the dataset

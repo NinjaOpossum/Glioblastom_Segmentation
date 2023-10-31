@@ -1,0 +1,11 @@
+*.npy
+*.json
+/data/*
+*.ndpi
+*.png
+*.pkl
+*.pt
+*.csv
+*.pyc
+workdirOct/
+MountData/
