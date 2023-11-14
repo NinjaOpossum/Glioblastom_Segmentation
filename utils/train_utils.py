@@ -28,11 +28,6 @@ def dice_coef(y_true, y_pred, smooth=1e-6):
     y_sum = np.sum(y_true_f) + np.sum(y_pred_f)
     return (2 * intersection + smooth) / (y_sum + smooth)
 
-    # y_true_f = y_true.contiguous().view(-1)
-    # y_pred_f = y_pred.contiguous().view(-1)
-    # intersection = (y_true_f * y_pred_f).sum()
-    # return (2. * intersection + smooth) / (y_true_f.sum() + y_pred_f.sum() + smooth)
-
 
 def dice_coef_multilabel(y_true, y_pred, numLabels):
     '''
