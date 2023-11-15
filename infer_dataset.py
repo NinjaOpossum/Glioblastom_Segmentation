@@ -1,18 +1,11 @@
 import os, time
-# os.add_dll_directory(r"C:\Users\PC\Desktop\Abrek\openslide-win64-20230414\openslide-win64-20230414\bin")
-
 import arguments.setting as setting
-
-# from learning.construct_features import construct_features
 from progress.bar import IncrementalBar
 from models import unet
 from datastructure import dataset_torch
 import datastructure.dataset as dataset
-
 from torch.utils.data import DataLoader
 
-# import learning.train
-# import learning.test
 import getopt, sys
 import numpy as np
 import torch
@@ -46,7 +39,6 @@ def infer(dataloader, model, log_dir, device, batch_size, patch_size, qupath_pro
             print(f"Infering {current_identifier}!")
         tiles = tiles.to(device)
         pred = model(tiles).detach().cpu().numpy()
-        # pred_map = pred.argmax(axis = 1).astype(np.uint8)
         pred_map = pred.sum(axis = (2, 3)).argmax(axis = 1).astype(np.uint8)
         for i in range(len(tiles)):
             if identifier[i] != current_identifier:
@@ -69,7 +61,6 @@ def infer(dataloader, model, log_dir, device, batch_size, patch_size, qupath_pro
             width = min(patch_size, current_size[0] - pos_x)
             pos_y = position[1][i]
             height = min(patch_size, current_size[1] - pos_y)
-            # ann_mask[pos_x : pos_x + width, pos_y : pos_y + height] = np.transpose(pred_map[i], [1, 0])[:width, :height]
             ann_mask[pos_x : pos_x + width, pos_y : pos_y + height] = pred_map[i]
     print(f"Saving {current_identifier}!")
     # np kann ausgeschaltert werden wegen Speicherplatz
