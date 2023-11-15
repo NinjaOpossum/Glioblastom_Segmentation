@@ -373,8 +373,7 @@ class DataSetting(object):
         # Choose which Tiles to generate - detailed explanation in class 
         self.tile_properties = [
             TileProperty((self.patch_size, self.patch_size), (0, 0), (self.patch_size, self.patch_size), 
-            Compose([RandomCrop(self.patch_size, self.patch_size, always_apply=True, p=1.0),
-            Normalize(always_apply=True, p=1.0)]))
+            Compose([RandomCrop(self.patch_size, self.patch_size, always_apply=True, p=1.0)]))
         ]
 
         # Set True if want to Skip existing Tilings - Rerun necessary if changes in tiling/filtering were made
